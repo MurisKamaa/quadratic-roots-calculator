@@ -9,8 +9,8 @@ let numB;
 let numC;
 a.addEventListener('change', () => {
     numA = parseInt(a.value);
-    if (numA === 0 || numA < -99 || numA > 99) {
-        alert('a should lie between -99 and +99 and should not be 0')
+    if (numA === 0 || numA < -999 || numA > 999) {
+        alert('a should lie between -999 and +999 and should not be 0')
         inputs[0].style.border = '2px solid red';
         output.innerText = '';
     } else {
@@ -20,8 +20,8 @@ a.addEventListener('change', () => {
 
 b.addEventListener('change', () => {
     numB = parseInt(b.value);
-    if (numB < -99 || numB > 99) {
-        alert('b should lie between -99 and +99')
+    if (numB < -999 || numB > 999) {
+        alert('b should lie between -999 and +999')
         inputs[1].style.border = '2px solid red';
         output.innerText = '';
     } else {
@@ -31,8 +31,8 @@ b.addEventListener('change', () => {
 
 c.addEventListener('change', () => {
     numC = parseInt(c.value);
-    if (numC < -99 || numC > 99) {
-        alert('c should lie between -99 and +99')
+    if (numC < -999 || numC > 999) {
+        alert('c should lie between -999 and +999')
         inputs[2].style.border = '2px solid red';
         output.innerText = '';
     } else {
